@@ -136,6 +136,88 @@
   background-color: #3b5998 !important;
 }
 
+/* ==========================================
+   ENHANCED FOOTER SYSTEM
+   ========================================== */
+
+.section-footer {
+  background-color: #dbdfe3;
+  /* Professional light-grey background */
+  border-top: 1px solid #dee2e6;
+  color: #212529;
+  width: 100%;
+}
+
+/* 1. CRITICAL: Handle the Sidebar Offset */
+@media (min-width: 992px) {
+  .section-footer {
+    /* This pushes the footer content to the right so it doesn't 
+           go underneath your fixed side menu */
+    padding-left: 17rem;
+  }
+}
+
+/* 2. Social Icon Styling */
+.section-footer .social-icons .social-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 3.5rem;
+  width: 3.5rem;
+  background-color: #495057;
+  /* Dark grey default */
+  color: #fff !important;
+  border-radius: 50%;
+  margin: 0 0.75rem;
+  font-size: 1.5rem;
+  text-decoration: none;
+  transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* 3. Social Media Hover Effects */
+.section-footer .link-linkedin:hover {
+  background-color: #0077b5 !important;
+  transform: translateY(-5px);
+}
+
+.section-footer .link-github:hover {
+  background-color: #333333 !important;
+  transform: translateY(-5px);
+}
+
+.section-footer .link-telegram:hover {
+  background-color: #0088cc !important;
+  transform: translateY(-5px);
+}
+
+.section-footer .link-facebook:hover {
+  background-color: #3b5998 !important;
+  transform: translateY(-5px);
+}
+
+/* 4. Text and Button Styling */
+.section-footer h4 {
+  color: #bd7037;
+  /* Matches the theme's primary accent color */
+}
+
+.section-footer .btn-outline-dark {
+  border-radius: 50px;
+  /* Modern pill-shaped button */
+  padding: 0.5rem 1.5rem;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  letter-spacing: 1px;
+}
+
+.section-footer a.text-muted:hover {
+  color: #bd7037 !important;
+  /* Theme primary color */
+  transition: color 0.3s ease;
+}
+
+
 :root {
   --bs-blue: #0d6efd;
   --bs-indigo: #6610f2;
