@@ -8,18 +8,34 @@
     <meta name="author" content="" />
     <title>Demekes Resume</title>
     <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
-    <!-- Font Awesome icons (free version)-->
     <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
-    <!-- Google fonts-->
     <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet"
         type="text/css" />
     <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" type="text/css" />
-    <!-- Core theme CSS (includes Bootstrap)-->
+
     <link href="css/styles.css" rel="stylesheet" />
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <style>
+        /* Small hover motion for your profile picture */
+        .img-profile:hover {
+            transform: scale(1.05);
+            transition: all 0.3s ease-in-out;
+        }
+
+        /* Smooth transition for social icons */
+        .social-icon {
+            transition: transform 0.3s ease;
+        }
+
+        .social-icon:hover {
+            transform: translateY(-5px);
+        }
+    </style>
 </head>
 
 <body id="page-top">
-    <!-- Navigation-->
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
         <a class="navbar-brand js-scroll-trigger" href="#page-top">
             <span class="d-block d-lg-none">Demeke Ayal</span>
@@ -40,10 +56,8 @@
             </ul>
         </div>
     </nav>
-    <!-- Page Content-->
     <div class="container-fluid p-0">
-        <!-- About-->
-        <section class="resume-section" id="about">
+        <section class="resume-section" id="about" data-aos="fade-in">
             <div class="resume-section-content">
                 <div class="mb-3" style="flex:2; text-align:center">
                     <h3 class="mb-0">
@@ -79,12 +93,12 @@
             </div>
         </section>
         <hr class="m-0" />
-        <!-- Experience-->
         <section class="resume-section" id="experience">
             <div class="resume-section-content">
-                <h3 class="mb-5" style="color:#003366; font-weight:700; text-align: center;"><u><i>Experience</i></u>
+                <h3 class="mb-5" style="color:#003366; font-weight:700; text-align: center;" data-aos="fade-down">
+                    <u><i>Experience</i></u>
                 </h3>
-                <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                <div class="d-flex flex-column flex-md-row justify-content-between mb-5" data-aos="fade-right">
                     <div class="flex-grow-1">
                         <h4 class="mb-0" style="color:#0056b3;">Software Engineer I</h4>
                         <div class="subheading mb-3" style="color:#198754; font-weight:500;">Awash Bank S.C</div>
@@ -100,7 +114,8 @@
                     <div class="flex-shrink-0"><span class="text-primary">october 2025 - Present</span></div>
                 </div>
 
-                <div class="d-flex flex-column flex-md-row justify-content-between">
+                <div class="d-flex flex-column flex-md-row justify-content-between" data-aos="fade-right"
+                    data-aos-delay="200">
                     <div class="flex-grow-1">
                         <h4 class="mb-0" style="color:#0056b3;">Associate software engineer</h4>
                         <div class="subheading mb-3" style="color:#198754; font-weight:500;">Awash bank S.C</div>
@@ -118,8 +133,7 @@
             </div>
         </section>
         <hr class="m-0" />
-        <!-- Education-->
-        <section class="resume-section" id="education">
+        <section class="resume-section" id="education" data-aos="fade-up">
             <div class="resume-section-content">
                 <h3 class="mb-5" style="color:#003366; font-weight:700; text-align: center;"><u><i>Education</i></u>
                 </h3>
@@ -152,49 +166,39 @@
             </div>
         </section>
         <hr class="m-0" />
-        <!-- Skills-->
         <section class="resume-section" id="skills">
             <div class="resume-section-content">
-                <h3 class="mb-5" style="color:#003366; font-weight:700; text-align: center;"><u><i>Skills</i></u></h3>
+                <h3 class="mb-5" style="color:#003366; font-weight:700; text-align: center;" data-aos="zoom-in">
+                    <u><i>Skills</i></u></h3>
                 <div class="subheading mb-3">Programming Languages & Tools</div>
                 <ul class="list-inline dev-icons">
-                    <li class="list-inline-item"><i class="fab fa-html5 icon-html" title="HTML5"></i></li>
-                    <li class="list-inline-item"><i class="fab fa-css3-alt icon-css" title="CSS3"></i></li>
-                    <li class="list-inline-item"><i class="fab fa-js-square icon-js" title="JavaScript"></i></li>
-                    <li class="list-inline-item"><i class="fab fa-angular icon-angular" title="Angular"></i></li>
-                    <li class="list-inline-item"><i class="fab fa-react icon-react" title="React"></i></li>
-                    <li class="list-inline-item"><i class="fab fa-node-js icon-node" title="Node.js & NestJS"></i></li>
-                    <li class="list-inline-item"><i class="fab fa-java icon-java" title="Java & Spring Boot"></i></li>
-                    <li class="list-inline-item"><i class="fas fa-database icon-sql" title="SQL Server"></i></li>
-                    <li class="list-inline-item"><i class="fab fa-git-alt icon-git" title="Git (Version Control)"></i>
-                    </li>
-                    <li class="list-inline-item"><i class="fas fa-server icon-mysql" title="MySQL Database"></i></li>
-                    <li class="list-inline-item"><i class="fab fa-npm icon-npm" title="NPM"></i></li>
-                </ul>
-                <div class="subheading mb-3">Workflow</div>
-                <ul class="fa-ul mb-0">
-                    <li>
-                        <span class="fa-li"><i class="fas fa-check"></i></span>
-                        Mobile-First, Responsive Design
-                    </li>
-                    <li>
-                        <span class="fa-li"><i class="fas fa-check"></i></span>
-                        Cross Browser Testing & Debugging
-                    </li>
-                    <li>
-                        <span class="fa-li"><i class="fas fa-check"></i></span>
-                        Cross Functional Teams
-                    </li>
-                    <li>
-                        <span class="fa-li"><i class="fas fa-check"></i></span>
-                        Agile Development & Scrum
-                    </li>
+                    <li class="list-inline-item" data-aos="zoom-in" data-aos-delay="100"><i
+                            class="fab fa-html5 icon-html" title="HTML5"></i></li>
+                    <li class="list-inline-item" data-aos="zoom-in" data-aos-delay="150"><i
+                            class="fab fa-css3-alt icon-css" title="CSS3"></i></li>
+                    <li class="list-inline-item" data-aos="zoom-in" data-aos-delay="200"><i
+                            class="fab fa-js-square icon-js" title="JavaScript"></i></li>
+                    <li class="list-inline-item" data-aos="zoom-in" data-aos-delay="250"><i
+                            class="fab fa-angular icon-angular" title="Angular"></i></li>
+                    <li class="list-inline-item" data-aos="zoom-in" data-aos-delay="300"><i
+                            class="fab fa-react icon-react" title="React"></i></li>
+                    <li class="list-inline-item" data-aos="zoom-in" data-aos-delay="350"><i
+                            class="fab fa-node-js icon-node" title="Node.js & NestJS"></i></li>
+                    <li class="list-inline-item" data-aos="zoom-in" data-aos-delay="400"><i
+                            class="fab fa-java icon-java" title="Java & Spring Boot"></i></li>
+                    <li class="list-inline-item" data-aos="zoom-in" data-aos-delay="450"><i
+                            class="fas fa-database icon-sql" title="SQL Server"></i></li>
+                    <li class="list-inline-item" data-aos="zoom-in" data-aos-delay="500"><i
+                            class="fab fa-git-alt icon-git" title="Git (Version Control)"></i></li>
+                    <li class="list-inline-item" data-aos="zoom-in" data-aos-delay="550"><i
+                            class="fas fa-server icon-mysql" title="MySQL Database"></i></li>
+                    <li class="list-inline-item" data-aos="zoom-in" data-aos-delay="600"><i class="fab fa-npm icon-npm"
+                            title="NPM"></i></li>
                 </ul>
             </div>
         </section>
         <hr class="m-0" />
-        <!-- Interests-->
-        <section class="resume-section" id="interests">
+        <section class="resume-section" id="interests" data-aos="fade-up">
             <div class="resume-section-content">
                 <h3 class="mb-5" style="color:#003366; font-weight:700; text-align: center;"><u><i>Interests</i></u>
                 </h3>
@@ -213,51 +217,51 @@
             </div>
         </section>
         <hr class="m-0" />
-        <!-- Awards-->
         <section class="resume-section" id="awards">
             <div class="resume-section-content">
-                <h3 class="mb-5" style="color:#003366; font-weight:700; text-align: center;"><u><i>Certifications &
+                <h3 class="mb-5" style="color:#003366; font-weight:700; text-align: center;" data-aos="fade-down">
+                    <u><i>Certifications &
                             Documents</i></u></h3>
 
                 <ul class="fa-ul mb-5">
-                    <li>
+                    <li data-aos="fade-left" data-aos-delay="100">
                         <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
                         Bahir Dar University - BSC Degree certificate 2021
                     </li>
-                    <li>
+                    <li data-aos="fade-left" data-aos-delay="200">
                         <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
                         Debrework Preparatory School - Grade 12 certificate 2016
                     </li>
-                    <li>
+                    <li data-aos="fade-left" data-aos-delay="300">
                         <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
                         Debrework High School - Grade 10 certificate 2014
                     </li>
-                    <li>
+                    <li data-aos="fade-left" data-aos-delay="400">
                         <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
                         Enarj Meskel Primary School - Grade 8 Certificate 2012
                     </li>
                 </ul>
 
                 <div class="row text-center">
-                    <div class="col-md-3 col-sm-6 mb-3">
+                    <div class="col-md-3 col-sm-6 mb-3" data-aos="flip-up" data-aos-delay="100">
                         <button class="btn btn-outline-primary w-100 py-3" data-bs-toggle="modal"
                             data-bs-target="#universityModal">
                             <i class="fas fa-university mb-2 d-block"></i> BSC Degree
                         </button>
                     </div>
-                    <div class="col-md-3 col-sm-6 mb-3">
+                    <div class="col-md-3 col-sm-6 mb-3" data-aos="flip-up" data-aos-delay="200">
                         <button class="btn btn-outline-primary w-100 py-3" data-bs-toggle="modal"
                             data-bs-target="#grade12Modal">
                             <i class="fas fa-scroll mb-2 d-block"></i> Grade 12
                         </button>
                     </div>
-                    <div class="col-md-3 col-sm-6 mb-3">
+                    <div class="col-md-3 col-sm-6 mb-3" data-aos="flip-up" data-aos-delay="300">
                         <button class="btn btn-outline-primary w-100 py-3" data-bs-toggle="modal"
                             data-bs-target="#grade10Modal">
                             <i class="fas fa-scroll mb-2 d-block"></i> Grade 10
                         </button>
                     </div>
-                    <div class="col-md-3 col-sm-6 mb-3">
+                    <div class="col-md-3 col-sm-6 mb-3" data-aos="flip-up" data-aos-delay="400">
                         <button class="btn btn-outline-primary w-100 py-3" data-bs-toggle="modal"
                             data-bs-target="#grade8Modal">
                             <i class="fas fa-certificate mb-2 d-block"></i> Grade 8
@@ -365,13 +369,19 @@
         </footer>
     </div>
 
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
     <script>
+        // Initialize AOS
+        AOS.init({
+            duration: 1000, // Duration of animation in milliseconds
+            once: true,     // Whether animation should happen only once - while scrolling down
+        });
+
         document.getElementById("year").innerHTML = new Date().getFullYear();
     </script>
 
-    <!-- Bootstrap core JS-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-    <!-- Core theme JS-->
     <script src="js/scripts.js"></script>
 </body>
 
