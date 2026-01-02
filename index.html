@@ -38,6 +38,23 @@
         .social-icon:hover {
             transform: translateY(-5px);
         }
+
+        /* --- ADDED EXPERIENCE STYLING --- */
+        .experience-item {
+            padding: 1.5rem;
+            border-left: 1px solid #0056b3;
+            background: #fdfdfd;
+            border-radius: 0 12px 12px 0;
+            margin-bottom: 2rem;
+            transition: all 0.3s ease;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+        }
+
+        .experience-item:hover {
+            transform: translateX(8px);
+            background: #fff;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+        }
     </style>
 </head>
 
@@ -109,37 +126,34 @@
                 <h3 class="mb-5" style="color:#003366; font-weight:700; text-align: center;" data-aos="fade-down">
                     <u><i>Experience</i></u>
                 </h3>
-                <div class="d-flex flex-column flex-md-row justify-content-between mb-5" data-aos="fade-right">
-                    <div class="flex-grow-1">
-                        <h4 class="mb-0" style="color:#0056b3;">Software Engineer I</h4>
-                        <div class="subheading mb-3" style="color:#198754; font-weight:500;">Awash Bank S.C</div>
-                        <p>
-                            Designed and developed a <b>Claim Management System </b>to streamline the processing,
-                            tracking, and resolution
-                            of branch and finance department claims. Built a responsive front end using Angular and
-                            implemented robust
-                            backend services with Spring Boot, integrating a SQL database to ensure data accuracy,
-                            security, and efficient transaction handling.
-                        </p>
+
+                <div class="experience-item" data-aos="fade-right">
+                    <div class="d-flex flex-column flex-md-row justify-content-between">
+                        <div class="flex-grow-1">
+                            <h4 class="mb-0" style="color:#0056b3;">Software Engineer I</h4>
+                            <div class="subheading mb-3" style="color:#198754; font-weight:600;">Awash Bank S.C</div>
+                            <p>Designed and developed a <b>Claim Management System</b> to streamline the processing,
+                                tracking, and resolution of branch and finance department claims. Built a responsive
+                                front end using Angular and implemented robust backend services with Spring Boot,
+                                ensuring data accuracy and secure transaction handling.</p>
+                        </div>
+                        <div class="flex-shrink-0"><span class="badge bg-primary text-white">October 2025 -
+                                Present</span></div>
                     </div>
-                    <div class="flex-shrink-0"><span class="text-primary">october 2025 - Present</span></div>
                 </div>
 
-                <div class="d-flex flex-column flex-md-row justify-content-between" data-aos="fade-right"
-                    data-aos-delay="200">
-                    <div class="flex-grow-1">
-                        <h4 class="mb-0" style="color:#0056b3;">Associate software engineer</h4>
-                        <div class="subheading mb-3" style="color:#198754; font-weight:500;">Awash bank S.C</div>
-                        <p>
-                            Collaborated with cross-functional teams to develop a<b> Vendor Management System and a
-                                Reconciliation Management System.</b> Contributed to requirement analysis, system
-                            design,
-                            and implementation using Angular for the user interface, Spring Boot for backend services,
-                            and SQL for database management, improving operational efficiency and data consistency
-                            across banking processes.
-                        </p>
+                <div class="experience-item" data-aos="fade-right" data-aos-delay="200">
+                    <div class="d-flex flex-column flex-md-row justify-content-between">
+                        <div class="flex-grow-1">
+                            <h4 class="mb-0" style="color:#0056b3;">Associate Software Engineer</h4>
+                            <div class="subheading mb-3" style="color:#198754; font-weight:600;">Awash Bank S.C</div>
+                            <p>Collaborated with cross-functional teams to develop a <b>Vendor Management System and a
+                                    Reconciliation Management System.</b> Contributed to requirement analysis, system
+                                design, and implementation using Angular, Spring Boot, and SQL, improving operational
+                                efficiency and consistency.</p>
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-primary">September 2022 - October 2025</span></div>
                     </div>
-                    <div class="flex-shrink-0"><span class="text-primary">September 2022 - october 2025</span></div>
                 </div>
             </div>
         </section>
@@ -389,7 +403,6 @@
     <script src="js/scripts.js" defer></script>
 
     <script>
-        // Use a small timer to wait for libraries to load before initializing
         window.addEventListener('load', function () {
             if (typeof AOS !== 'undefined') {
                 AOS.init({
